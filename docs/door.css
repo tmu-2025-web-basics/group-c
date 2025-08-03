@@ -1,0 +1,302 @@
+/* リセット＆全体設定 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 100%; /*height: 100%; */
+  overflow-x: hidden; /* 横スクロールを防ぐ */ }
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* 既存のスタイルはそのまま */
+    /*background: rgba(255,255,255,0.8);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  .logo-button {
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #333;        /* 四角の枠を追加 */
+    padding: 0.2rem 0.7rem;         /* 内側の余白 */
+    background-color:#ffffff;  /* 背景を少し白く */
+    font-family: sans-serif;
+  }
+
+
+
+body.doorpage12 {
+    padding-top: 4rem; /* ヘッダー上下の padding を合わせて、だいたい4rem程度に調整 */
+    height:auto;
+    background-image: 
+    linear-gradient(to right, #e589ab 1px, transparent 1px),
+    linear-gradient(to bottom, #e589ab 1px, transparent 1px);
+    background-size: 70px 70px;
+    background-color: #badced; /* 背景色（統一） */
+    background-position: 0 0;
+}
+body.doorpage34{
+    padding-top: 4rem; /* ヘッダー上下の padding を合わせて、だいたい4rem程度に調整 */
+    height:auto;
+    background-image: 
+    linear-gradient(to right, #f6f8a2 1px, transparent 1px),
+    linear-gradient(to bottom, #f6f8a2 1px, transparent 1px);
+    background-size: 70px 70px;
+    background-color: #cdcdcd; /* 背景色（統一） */
+    background-position: 0 0;
+}
+body.doorpage56{
+    padding-top: 4rem; /* ヘッダー上下の padding を合わせて、だいたい4rem程度に調整 */
+    height:auto;
+    background-image: 
+    linear-gradient(to right, #8a8bd1 1px, transparent 1px),
+    linear-gradient(to bottom, #8a8bd1 1px, transparent 1px);
+    background-size: 70px 70px;
+    background-color: #f6f8a2; /* 背景色（統一） */
+    background-position: 0 0;
+}
+body.doorpage78{
+    padding-top: 4rem; /* ヘッダー上下の padding を合わせて、だいたい4rem程度に調整 */
+    height:auto;
+    background-image: 
+    linear-gradient(to right, #ede577 1px, transparent 1px),
+    linear-gradient(to bottom, #ede577 1px, transparent 1px);
+    background-size: 70px 70px;
+    background-color: #9faacb; /* 背景色（統一） */
+    background-position: 0 0;
+}
+body.doorpage910{
+    padding-top: 4rem; /* ヘッダー上下の padding を合わせて、だいたい4rem程度に調整 */
+    height:auto;
+    background-image: 
+    linear-gradient(to right, #4090a3 1px, transparent 1px),
+    linear-gradient(to bottom, #4090a3 1px, transparent 1px);
+    background-size: 70px 70px;
+    background-color: #bacfc0; /* 背景色（統一） */
+    background-position: 0 0;
+}
+
+
+
+  /* Door詳細ページの画像スタイル */
+.door-detail .door-main img {
+  max-width: 150px;    /* 幅をさらに縮小 */
+  width: 100%;         /* コンテナ内で幅を100% */
+  height: auto;        /* 高さ自動調整 */
+  object-fit: contain; /* アスペクト比を保持 */
+  display: block;
+  margin: 0 auto;      /* 中央寄せ */
+}
+@media (max-width: 1100px) {
+  .door-detail .door-main img {
+    max-width: 160px;  /* 狭い画面での幅を調整 */
+    margin-top: 180px;               /* 余白を維持 */
+    max-width: 200px;                /* 狭い画面ではさらに縮小 */
+  }
+}
+/* Door詳細ページの文章スタイル */
+  .door-detail .door-main p {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #333;
+    background:#f8f8f8;
+    padding: 20px;
+    font-family: "source-han-sans-japanese", sans-serif; 
+    font-weight:bold;
+    border:1px solid #333;
+  }
+
+
+  .doortitle12{
+    font-family: "source-han-sans-japanese", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    position: absolute;
+    top: 140px;        
+    width: 351px;     
+    height: 71px;    
+    background-color: #f8f8f8;
+    border: 1px solid #e589ab;  
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .doortitle34{
+    font-family: "source-han-sans-japanese", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    position: absolute;
+    top: 140px;        
+    width: 351px;     
+    height: 71px;    
+    background-color: #f8f8f8;
+    border: 1px solid #f6f8a2;  
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .doortitle56{
+    font-family: "source-han-sans-japanese", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    position: absolute;
+    top: 140px;        
+    width: 351px;     
+    height: 71px;    
+    background-color: #f8f8f8;
+    border: 1px solid #8a8bd1;  
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .doortitle78{
+    font-family: "source-han-sans-japanese", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    position: absolute;
+    top: 140px;        
+    width: 351px;     
+    height: 71px;    
+    background-color: #f8f8f8;
+    border: 1px solid #ede577;  
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .doortitle910{
+    font-family: "source-han-sans-japanese", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    position: absolute;
+    top: 140px;        
+    width: 351px;     
+    height: 71px;    
+    background-color: #f8f8f8;
+    border: 1px solid #4090a3;  
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+ /* .door-detail .door-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .door-detail .door-gallery img {
+    max-width: 400px;
+    height: auto;
+    width: 100%;
+    display: block;
+  }*/
+ /* 既存の.door-detail .door-gallery部分を以下に置き換え */
+.door-detail .door-gallery {
+    display: flex;
+    flex-direction: column;                 /* 小画面では縦並び */
+    align-items: center;                    /* 中央揃え */
+    gap: 30px;                              /* 画像間の間隔 */
+    margin: 30px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+  
+  .door-detail .door-gallery img {
+    width: calc(50vw + 100px);              /* 小画面では横幅をさらに大きく */
+    height: auto;                           /* 高さは画像の比率に合わせて自動調整 */
+    object-fit: contain;                    /* 画像を切らずに全体を表示 */
+    min-width: 350px;                       /* 最小幅をさらに大きく */
+    max-width: 380px;                       /* 最大幅をさらに大きく */
+  }
+  
+  /* 画面が大きい時（800px以上）は横並びに戻す */
+  @media (min-width: 800px) {
+    .door-detail .door-gallery {
+      flex-direction: row;                  /* 横並びに変更 */
+      flex-wrap: wrap;                      /* 折り返し可能 */
+      justify-content: center;              /* 中央揃え */
+    }
+    
+    .door-detail .door-gallery img {
+      width: auto;                          /* 横幅は比率に合わせて自動調整 */
+      height: calc(20vw + 100px);           /* 縦の大きさをより大きく調整 */
+      min-height: 250px;                    /* 最小高さを大きく */
+      max-height: 500px;                    /* 最大高さを大きく */
+      min-width: auto;                      /* 小画面用の制限を解除 */
+      max-width: none;                      /* 小画面用の制限を解除 */
+    }
+  }
+
+
+
+
+  
+  /* フッター */
+.site-footer {
+    text-align: center;                      /* 文字色を白に */
+    font-size: min(calc(0.5vw + 0.7rem), 1.2rem);        
+    width: calc(30vw + 200px);             
+    margin-top: 100px;  
+    margin-bottom:80px;                    
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.8rem 1rem;          
+    font-family: "source-han-sans-japanese",sans-serif;  
+    background: #f8f8f8;
+    border:1px solid #333;
+  }
+  .global-nav {
+    width: 100%;
+  }
+  .global-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 0.3rem;
+    justify-content: center;
+  }
+  .global-nav ul:first-child {
+    margin-bottom: 0.5rem;                  /* 1行目と2行目の間だけに間隔 */
+  }
+  .global-nav li {
+    flex: 0 0 auto;                       /* 幅を内容に合わせる */
+    min-width: 4rem;                      /* 最小幅を統一 */
+  }
+  .global-nav a {
+    text-decoration: none;
+    color: #000000;                       /* 白文字に変更 */
+    padding: 0.3rem 0.7rem 0.1rem 0.7rem;
+    transition: border-color .2s;
+    text-align: center;
+    border-bottom: 1px solid transparent;  
+  }
+  /*@media (min-width: 1100px) {
+    .global-nav a {
+      padding: 0.3rem 3rem;
+    }
+  }*/
+  .global-nav a:hover {
+    border-bottom-color: #000000;           /* ホバー時に黒い下線 */
+  }
